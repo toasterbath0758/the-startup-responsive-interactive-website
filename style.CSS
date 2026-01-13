@@ -233,11 +233,26 @@ footer {}
 
 
 .hoveranimatieh2 span {
+    background: linear-gradient(black, black);
+    background-size: 0 60%;
+    background-position: 0 0.2em ;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-out, color 0.5s ease-out;
+}
+
+.hoveranimatieh2:hover span {
+    color: white;
+    background-size: 100% 60%;
+}
+
+/* MARK: kijken hoe dit werkt!!! */
 .hoveranimatieh3 em {
  xs sa     translate: 0 0;
     transition:  .5s ease-out, 0.5s ease-out;
 }
 
+.hoveranimatieh3:hover em {
+    translate: 0 100%;
 }
 
 
