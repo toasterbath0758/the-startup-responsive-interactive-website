@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "HindGunturMedium";
+    src: url(assets/fonts/HindGuntur/HindGuntur-medium.ttf);
+}
+
+@font-face {
+    font-family: "HindGunturLight";
+    src: url(assets/fonts/HindGuntur/HindGuntur-Light.ttf);
+}
+
+* {
+    font-family: "HindGunturLight";
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+html,
+header,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* MARK: var: stylesheet */
+
+/* kleuren */
+:root {
+    --header-kleur: #FFFFFF;
+    --bg-kleur: #FFFFFF;
+
+    --knop-pagina-nummer: #E2655E;
+    --knop-pagina-nummer-actief: #281CE2;
+
+    --knop: #FFFFFF;
+    --knop-actief: #000000;
+
+    --hamburger-menu-knop: #281CE2;
+
+    --kleur-footer-bg: #e6e6e6;
+
+}
+
+/* font-size + weight */
+:root {
+    --font-size-xxl: 52.1253px;
+    --font-size-xl: 37.5px;
+    --font-size-l: 35px;
+    --font-size-m: 30px;
+    --font-size-s: 19px;
+    --font-size-xs: 18px;
+
+    --font-weight-strong: 700;
+    --font-weight-normal: 100;
+}
+
+
+main {
+    justify-items: center;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    box-shadow: 0px 5px 0.8em grey;
+}
+
+
+.labelVierLogo {
+    display: flex;
+    width: 160px;
+    place-self: center;
+}
+
+div {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    /* place-content: center; */
+}
+
+.headerUl {
+    padding: 0;
+}
+
+.headerNav {
+    display: none;
+    margin: 1em;
+
+    @media min-width {
+        width: 985px;
+    }
+}
+
+.headerUl {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navKnop {
+    display: flex;
+    translate: 0 0;
+    padding: 1em;
+    place-items: center;
+    place-content: center;
+}
+
+.icoon {
+    width: 50px;
+}
+
+section.openHamburgerMenuKnop {
+    display: flex;
+    z-index: 3;
+    color: var(--knop);
+    background-color: var(--hamburger-menu-knop);
+    padding: 1em;
+    justify-self: end;
+}
+
+/* :MARK waarom werkt dit niet hoezo?? hij moet fixed pos hebben */
+.openHamburgerMenuKnop {
+    /* position: fixed; */
+    right: 0;
+}
+
+.hamburgerNav {
+    position: fixed;
+    width: 100%;
+}
+
+.hamburgerUl {
+    padding: 40px;
+    background-color: var(--bg-kleur);
+}
+
+/* .hamburgerLi {
+    
+} */
+
+.hamburgerKnop {
+    display: flex;
+    z-index: 2;
+    translate: 0 0;
+    padding: 20px;
+    background-color: var(--knop-header);
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+    padding-top: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: 0;
+}
+
+a {
+    font-weight: var(--font-weight-strong);
+    text-decoration: none;
+    color: black;
+}
+
+a.link {
+    text-decoration: underline;
+}
+
+a.hamburgerKnop {
+    font-size: var(--font-size-m);
+}
+
+p {
+    padding-bottom: 0;
+    width: fit-content;
+    font-size: var(--font-size-s);
+}
+
+h3 {
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    
+}
+
+h3.lees-verder {
+    justify-self: start;
+}
+
+/* h1.strong {
+    margin-top: 1em;
+} */
+
+em {
+    font-family: "HindGunturMedium";
+    font-weight: var(--font-weight-strong);
+    padding: 0;
+    margin: 0;
+    justify-self: start;
+    font-style: normal;
+}
+
+section {
+    width: 260px;
+    justify-items: center;
+    padding: 1em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 260px;
+    margin: 0;
+    padding: 0;
+}
+
+/* pagina nummer list */?
+
+footer {}
+
+.footerTanden {
+    height: 15px;
+    background-color: var(--kleur-footer-bg);
+    padding-bottom: 1em;
+
+}
+
+
+.hoveranimatieh2 span {
+.hoveranimatieh3 em {
+ xs sa     translate: 0 0;
+    transition:  .5s ease-out, 0.5s ease-out;
+}
+
+}
+
+
+
+.footer {
+    background-color: var(--kleur-footer-bg);
+    height: 1200px;
+}
+
+.footerUl {
+    padding: 0 2em 0 2em;
+    margin: 0;
+}
+
+.footerLi {
+    padding: 0.8em;
+}
+
+.footerTitel {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-normal);
+}
+
+.footerText {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-normal);
+}
