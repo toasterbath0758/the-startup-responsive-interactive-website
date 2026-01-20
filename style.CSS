@@ -1,6 +1,11 @@
 @font-face {
-    font-family: "HindGunturMedium";
-    src: url(assets/fonts/HindGuntur/HindGuntur-medium.ttf);
+    font-family: "HindGunturRegular";
+    src: url(assets/fonts/HindGuntur/HindGuntur-Regular.ttf);
+}
+
+@font-face {
+    font-family: "HindGunturBold";
+    src: url(assets/fonts/HindGuntur/HindGuntur-Bold.ttf);
 }
 
 @font-face {
@@ -9,7 +14,7 @@
 }
 
 * {
-    font-family: "HindGunturLight";
+    font-family: "HindGunturRegular";
     line-height: 1.2;
     font-weight: 100;
 }
@@ -50,44 +55,132 @@ body {
     --font-size-xs: 18px;
 }
 
-
 main {
+    padding-top: 2em;
     justify-items: center;
 }
 
+a {
+    color: var(--text-basis-donker);
+    font-weight: 700;
+}
+
+
 header {
+    background-color: var(--achtergrond-licht);
+    z-index: 10;
+    top: 0;
     position: sticky;
     width: 100%;
+    height: 100px;
     box-shadow: 0px 5px 0.8em grey;
+    transition: ease-in-out .5s;
+
+    @media (min-width: 985px) {
+        display: flex;
+    }
+}
+
+header.active {
+    z-index: 1;
+
+}
+
+header a {
+    font-family: "HindGunturBold";
 }
 
 
 .labelVierLogo {
     display: flex;
-    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
     place-self: center;
+
+    @media (min-width: 770px) {
+        padding-left: 1em;
+    }
 }
 
-div {
-    display: flex;
+.headerLogo {
+    @media (min-width: 985px) {}
+}
+
+a.navKnop::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition-duration: 0.2s;
+}
+
+a.navKnop:hover::after {
+    width: 100%;
+    background: var(--achtergrond-donker);
+    color: var(--text-basis-licht);
+    /*hiermee wordt hij zichtbaar */
+    /* font-weight: 700; */
+}
+
+a.navKnop {
+    text-decoration: none;
+    /*Dit is de hoogte van het atje en de 100% van de after houd deze aan*/
+    position: relative;
+    /*die heb je nodig om de postion absolute te laten werken :)*/
+    z-index: 0;
+
+    &:hover {
+        color:  var(--text-basis-licht);
+    }
+}
+
+/* summary.navKnop {
+    font-size: inherit;
+    justify-content: center;
+    place-content: center;
+    padding: 0;
+}
+
+.subMenuNav {
+    background: var(--achtergrond-licht);
+    top: 0.5em;
+    padding: 0.5em;
+} */
+
+a.contactKnopRechts {
+    background: var(--knop-blauw);
+    color: var(--text-basis-licht);
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+ul#contactKnopRechts {
+
+    align-content: center;
+    padding-right: 2.5em;
+}
+
+ul.headerUl {
+    gap: 1em;
+    padding: 0 1em 0 1em;
 }
 
 li {
     list-style: none;
-    /* place-content: center; */
 }
 
-.headerUl {
-    padding: 0;
-}
-
-.headerNav {
+nav.headerNav {
     display: none;
-    margin: 1em;
 
-    @media min-width {
-        width: 985px;
+    @media (min-width: 770px) {
+        display: flex;
     }
+}
+
+li.navLi {
+    align-content: center;
 }
 
 .headerUl {
@@ -96,53 +189,157 @@ li {
     padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 985px) {
+    justify-content: space-between;
+    }
+}
+
 .navKnop {
     display: flex;
     translate: 0 0;
     padding: 1em;
-    place-items: center;
-    place-content: center;
 }
 
 .icoon {
     width: 50px;
 }
 
-section.openHamburgerMenuKnop {
+button.icoon.hamburgerMenuKnop {
     display: flex;
-    z-index: 3;
-    color: var(--knop);
-    background-color: var(--hamburger-menu-knop);
+    z-index: 6;
+    color: var(--text-basis-licht);
+    background-color: var(--knop-blauw);
     padding: 1em;
     justify-self: end;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100px;
+    justify-content: center;
+    border-style: none;
+
+    @media (min-width: 985px) {
+        display: none;
+    }
 }
 
-/* :MARK waarom werkt dit niet hoezo?? hij moet fixed pos hebben */
-.openHamburgerMenuKnop {
-    /* position: fixed; */
-    right: 0;
+button.icoon.hamburgerMenuKnop #close {
+    display: none;
+}
+
+button.icoon.hamburgerMenuKnop #open {
+    display: block;
+}
+
+button.icoon.hamburgerMenuKnop.active #close {
+    display: block;
+}
+
+button.icoon.hamburgerMenuKnop.active #open {
+    display: none;
 }
 
 .hamburgerNav {
+    background-color: var(--achtergrond-licht);
+    z-index: 6;
     position: fixed;
+    display: block;
+    bottom: -100%;
     width: 100%;
+    height: 100vh;
+    transition: ease-in-out .5s;
+    overflow: scroll;
+}
+
+.hamburgerNav.active {
+    bottom: 0%;
 }
 
 .hamburgerUl {
-    padding: 40px;
-    background-color: var(--bg-kleur);
+    background-color: var(--achtergrond-licht);
 }
 
-/* .hamburgerLi {
-    
-} */
+.hamburgerKnop {
+    color: var(--text-basis-donker);
+    height: 30px;
+}
+
+.hamburgerKnop.active {
+    background: var(--achtergrond-donker);
+    color: var(--text-basis-licht);
+}
+
+.subMenuHamburger {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 0.8em;
+    color: var(--text-basis-donker);
+}
+
+form {
+    padding: 20px;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    background-color: var(--zoekbalk);
+}
+
+details {
+    margin-inline: auto;
+    /* max-width: 40rem; */
+}
+
+summary {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+summary::marker {
+    color: black;
+    font-size: 2rem;
+    display: none;
+}
+
+
+summary::after {
+    transform-origin: 15px 20px;
+    content: "^";
+    /* color: var(--); */
+    font-size: 4rem;
+    transition: transform 200ms ease;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
 
 .hamburgerKnop {
     display: flex;
     z-index: 2;
     translate: 0 0;
     padding: 20px;
-    background-color: var(--knop-header);
+    background-color: var(--color-wit);
+    
+}
+
+a.hamburgerKnop {
+    font-size: var(--font-size-m);
 }
 
 h1 {
@@ -154,20 +351,12 @@ h1 {
 h2 {
     font-size: var(--font-size-xl);
     margin-bottom: 0;
+    height: fit-content;
 }
 
 a {
-    font-weight: var(--font-weight-strong);
+    font-family: "HindGunturBold";
     text-decoration: none;
-    color: black;
-}
-
-a.link {
-    text-decoration: underline;
-}
-
-a.hamburgerKnop {
-    font-size: var(--font-size-m);
 }
 
 p {
@@ -176,86 +365,144 @@ p {
     font-size: var(--font-size-s);
 }
 
-h3 {
+em.lees-verder {
+    justify-self: start;
     font-size: var(--font-size-xs);
     font-weight: bold;
-    
 }
-
-h3.lees-verder {
-    justify-self: start;
-}
-
-/* h1.strong {
-    margin-top: 1em;
-} */
 
 em {
-    font-family: "HindGunturMedium";
-    font-weight: var(--font-weight-strong);
+    font-family: "HindGunturBold";
     padding: 0;
     margin: 0;
     justify-self: start;
     font-style: normal;
 }
 
-section {
-    width: 260px;
+
+/* responsive grid  */
+article.desktopGrid {
+    max-width: 320px;
     justify-items: center;
-    padding: 1em;
+    
+    @media (min-width: 770px) {
+        max-width: 450px;
+    }
+
+    @media (min-width: 985px) {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        section {
+            padding: 0 2em 0 2em;
+            display: grid;
+            grid-template-rows: 1fr auto auto;
+            max-height: 60%;
+        }
+
+        figure {
+            grid-row: 1/2;
+            grid-column: 1/2;
+            height: 520px;
+        }
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }  
+    }
+
+/* zorgt ervoor dat om en om de artikelen anders ingedeeld zijn */
+article.desktopGrid:nth-child(odd) {
+         figure {
+            grid-column: 2/3;
+        }
 }
 
+/* staat om de img heen */
 figure {
     margin: 0;
     padding: 0;
 }
 
 img {
-    width: 260px;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* pagina nummer list */?
+footer {
+    justify-items: center;
+    background-color: var(--kleur-footer-bg);
+    height: 1200px;
+}
 
-footer {}
+footer a {
+    font-family: "HindGunturRegular";
+}
 
 .footerTanden {
     height: 15px;
     background-color: var(--kleur-footer-bg);
     padding-bottom: 1em;
-
+    width: inherit;
 }
 
-
-.hoveranimatieh2 span {
+/* zet een background op de hover van de h2 */
+.hover-animatie-h2 span {
     background: linear-gradient(black, black);
     background-size: 0 60%;
-    background-position: 0 0.2em ;
+    background-position: 0 0.2em;
     background-repeat: no-repeat;
     transition: background-size .5s ease-out, color 0.5s ease-out;
 }
 
-.hoveranimatieh2:hover span {
-    color: white;
+.hover-animatie-h2 span:hover {
+    color: var(--text-basis-licht);
     background-size: 100% 60%;
 }
 
-/* MARK: kijken hoe dit werkt!!! */
-.hoveranimatieh3 em {
- xs sa     translate: 0 0;
-    transition:  .5s ease-out, 0.5s ease-out;
+ul.paginaNrUl {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding-left: 0;
 }
 
-.hoveranimatieh3:hover em {
-    translate: 0 100%;
+li.paginaNrLi {
+    margin: 0.5em;
+    height: 1em;
 }
 
+a.paginaNrKnop {
+    display: flex;
+    padding: 1.5em;
+    margin: 0.5em;
+    justify-items: center;
+    background-color: var(--knop-nr-basis);
+    color: var(--text-basis-licht);
 
+}
 
-.footer {
-    background-color: var(--kleur-footer-bg);
-    height: 1200px;
+.knopActive {
+    background-color: var(--knop-nr-actief);
+}
+
+a.link {
+    text-decoration: underline;
+}
+
+footer {
+    background: var(--achtergrond-footer);
+    justify-content: center;
+
+    @media (min-width: 985px) {
+        display: flex;
+        padding-top: 2em;
+        gap: 2em;
+    }
 }
 
 .footerUl {
@@ -269,10 +516,8 @@ footer {}
 
 .footerTitel {
     font-size: var(--font-size-l);
-    font-weight: var(--font-weight-normal);
 }
 
 .footerText {
     font-size: var(--font-size-s);
-    font-weight: var(--font-weight-normal);
 }
