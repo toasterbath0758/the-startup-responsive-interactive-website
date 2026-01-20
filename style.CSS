@@ -26,22 +26,21 @@ body {
 
 /* kleuren */
 :root {
-    --header-kleur: #FFFFFF;
-    --bg-kleur: #FFFFFF;
+    --achtergrond-licht: #FFFFFF;
+    --text-basis-licht: #FFFFFF;
+    --achtergrond-donker: #000000;
+    --text-basis-donker: #000000;
 
-    --knop-pagina-nummer: #E2655E;
-    --knop-pagina-nummer-actief: #281CE2;
+    --knop-nr-basis: #E2655E;
+    --knop-nr-actief: #281CE2;
 
-    --knop: #FFFFFF;
     --knop-actief: #000000;
-
-    --hamburger-menu-knop: #281CE2;
-
-    --kleur-footer-bg: #e6e6e6;
-
+    --knop-blauw: #281CE2;
+    --achtergrond-footer: #e6e6e6;
+    --zoekbalk: #e6e6e6;
 }
 
-/* font-size + weight */
+/* font-size*/
 :root {
     --font-size-xxl: 52.1253px;
     --font-size-xl: 37.5px;
@@ -49,9 +48,6 @@ body {
     --font-size-m: 30px;
     --font-size-s: 19px;
     --font-size-xs: 18px;
-
-    --font-weight-strong: 700;
-    --font-weight-normal: 100;
 }
 
 
