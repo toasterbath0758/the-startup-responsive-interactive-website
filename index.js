@@ -15,5 +15,4 @@ hamburgerKnoppen.forEach(function (knop) {
   knop.addEventListener('click', function(){
     this.classList.toggle('active');
   })
-
 })
