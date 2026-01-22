@@ -45,15 +45,8 @@ hiertussen heb ik een animatie gezet. ik heb alleen het principe "pose to pose" 
 
 https://github.com/user-attachments/assets/338fe561-2322-4014-a791-161c4054a30f
 
-ook heb ik met js een hamburgermenu met een accordionmenu gemaakt.
-hierin heb ik de marker een animatie gegeven waarin het 180deg draait op de click.
-
-https://github.com/user-attachments/assets/8e9276b0-a65f-4d42-a311-312f37993735
-
 
 responsiveness
-
-
 
 https://github.com/user-attachments/assets/be0b1e50-9ced-4bf0-bfc2-42120c98db7f
 
@@ -71,7 +64,14 @@ https://github.com/user-attachments/assets/be0b1e50-9ced-4bf0-bfc2-42120c98db7f
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
+ook heb ik met js een hamburgermenu met een accordionmenu gemaakt.
+hierin heb ik de marker een animatie gegeven waarin het 180deg draait op de click.
+
+https://github.com/user-attachments/assets/8e9276b0-a65f-4d42-a311-312f37993735
+
 ## Bronnen
+
+https://labelvier.nl/cases/
 
 ## Licentie
 
