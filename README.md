@@ -39,6 +39,14 @@ Exact hetzelfde verhaal met de textgroottes ik heb deze gekopieerd en verder nie
 Interactief
 Laat kort de interactie(s) zien die je hebt gemaakt. Toon een visual of video van de interactie en leg je ontwerpkeuzes uit. Je ontwerpkeuzes kan je uitleggen door te schrijven en te laten zien hoe je feedback en feedforward hebt toegepast in je ontwerp, dat je gebruik hebt gemaakt van labels of andere interactie principes. Bekijk hiervoor de workshop Interaction Design. Je kunt ontwerpkeuzes uitleggen met behulp van de Disney Animatie principes die je hebt toegepast in de workshop Programming User Interaction. Je kunt ontwerpkeuzes ook uitleggen met bevindingen uit de user test (de gebruiker heeft altijd gelijk), zoals je hebt gedaan tijdens de code/design review - user testing op vrijdag.
 
+De reden dat de interacties er zo uit zien is omdat ik de animaties heb nagemaakt van de https://labelvier.nl/cases/ pagina
+ik heb het disney animatie principe "pose to pose" gebruikt, namelijk twee frames een waar er nog niks gebeurt en een waar het is gebeurt
+hiertussen heb ik een animatie gezet. ik heb alleen het principe "pose to pose" gebruikt omdat ik vond dat dit de enige passende optie was in mijn visie.
+
+
+
+inter
+
 https://github.com/user-attachments/assets/8e9276b0-a65f-4d42-a311-312f37993735
 
 
