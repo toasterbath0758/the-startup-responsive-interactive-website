@@ -31,8 +31,6 @@ voor toegankelijkheid heb ik een WCAG audit de a11Y test, de lighthouse test en 
 deze heb ik gedocumenteerd in de WIKI (WCAG audit page)
 
 ### Huisstijl
-Laat kort de belangrijkste onderdelen van de huisstijl zien, en hoe je die hebt verwerkt. Misschien wil je hier wat details uitlichten, waar je rekening mee hebt gehouden.
-
 Ik heb om de huisstijl na te bootsen de exacte kleurcodes gebruikt die de originele website ook gebruikt.
 Ik heb rekening gehouden met de opdracht van het "namaken" omdat ik zo dicht mogelijk bij het origineel wilde blijven.
 Hierom heb ik geen veranderingen gemaakt aan de kleuren van de pagina.
@@ -44,26 +42,6 @@ ik heb het disney animatie principe "pose to pose" gebruikt, namelijk twee frame
 hiertussen heb ik een animatie gezet. ik heb alleen het principe "pose to pose" gebruikt omdat ik vond dat dit de enige passende optie was in mijn visie.
 
 https://github.com/user-attachments/assets/338fe561-2322-4014-a791-161c4054a30f
-
-
-responsiveness
-
-
-
-ik heb de site twee belangrijke breakpoints gegeven, namelijk op 770px en op 985px.
-op de startting state is het de mobile-view. 
-
-nog een stap verder heb je de pc-view op 985px.
-
-
-
-
-
-
-
-
-
-
 
 
 ## Kenmerken
