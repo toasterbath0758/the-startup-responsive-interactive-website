@@ -15,8 +15,9 @@ de oplossing: ik heb de werk/cases pagina nagemaakt en kleine aanpassingen gemaa
 https://toasterbath0758.github.io/the-startup-responsive-interactive-website/
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-###Responsive
-Ik heb de site mobile-first gemaakt op een minimale breedte van 350px
+### Responsive
+Ik heb de site mobile-first gemaakt op een minimale breedte van 350px,
+hierin staat een mobile-nav genaamd "hamburgerNav" die je activeert met de "hamburgerNavKnop".
 eerste breakpoint is op 770px, dit is de tablet-view. de mobile-nav is nog zichtbaar omdat deze fijn werkt op touch-screen.
 tweede breakpoint is op 985px, dit is de pc-view. de mobile-nav verdwijnt en de nav in de header word zichtbaar.
 
@@ -24,11 +25,11 @@ hier een video die de breakpoints laat zien doormiddel van de viewport.
 https://github.com/user-attachments/assets/47291606-4b3e-49ce-bd0c-9b19009d4476
 
 
-###Toegankelijk
+### Toegankelijk
 voor toegankelijkheid heb ik een WCAG audit de a11Y test, de lighthouse test en de handmatige tests.
 deze heb ik gedocumenteerd in de WIKI (WCAG audit page)
 
-###Huisstijl
+### Huisstijl
 Laat kort de belangrijkste onderdelen van de huisstijl zien, en hoe je die hebt verwerkt. Misschien wil je hier wat details uitlichten, waar je rekening mee hebt gehouden.
 
 Ik heb om de huisstijl na te bootsen de exacte kleurcodes gebruikt die de originele website ook gebruikt.
@@ -36,11 +37,9 @@ Ik heb rekening gehouden met de opdracht van het "namaken" omdat ik zo dicht mog
 Hierom heb ik geen veranderingen gemaakt aan de kleuren van de pagina.
 Exact hetzelfde verhaal met de textgroottes ik heb deze gekopieerd en verder niet aangeraakt.
 
-Interactief
-Laat kort de interactie(s) zien die je hebt gemaakt. Toon een visual of video van de interactie en leg je ontwerpkeuzes uit. Je ontwerpkeuzes kan je uitleggen door te schrijven en te laten zien hoe je feedback en feedforward hebt toegepast in je ontwerp, dat je gebruik hebt gemaakt van labels of andere interactie principes. Bekijk hiervoor de workshop Interaction Design. Je kunt ontwerpkeuzes uitleggen met behulp van de Disney Animatie principes die je hebt toegepast in de workshop Programming User Interaction. Je kunt ontwerpkeuzes ook uitleggen met bevindingen uit de user test (de gebruiker heeft altijd gelijk), zoals je hebt gedaan tijdens de code/design review - user testing op vrijdag.
-
+### Interactief
 De reden dat de interacties er zo uit zien is omdat ik de animaties heb nagemaakt van de https://labelvier.nl/cases/ pagina
-ik heb het disney animatie principe "pose to pose" gebruikt, namelijk twee frames een waar er nog niks gebeurt en een waar het is gebeurt
+ik heb het disney animatie principe "pose to pose" gebruikt, namelijk twee frames een waar er nog niks gebeurt en een waar het is gebeurt.
 hiertussen heb ik een animatie gezet. ik heb alleen het principe "pose to pose" gebruikt omdat ik vond dat dit de enige passende optie was in mijn visie.
 
 https://github.com/user-attachments/assets/338fe561-2322-4014-a791-161c4054a30f
@@ -48,7 +47,12 @@ https://github.com/user-attachments/assets/338fe561-2322-4014-a791-161c4054a30f
 
 responsiveness
 
-https://github.com/user-attachments/assets/be0b1e50-9ced-4bf0-bfc2-42120c98db7f
+
+
+ik heb de site twee belangrijke breakpoints gegeven, namelijk op 770px en op 985px.
+op de startting state is het de mobile-view. 
+
+nog een stap verder heb je de pc-view op 985px.
 
 
 
