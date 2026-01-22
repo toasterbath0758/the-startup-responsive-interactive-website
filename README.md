@@ -43,14 +43,26 @@ De reden dat de interacties er zo uit zien is omdat ik de animaties heb nagemaak
 ik heb het disney animatie principe "pose to pose" gebruikt, namelijk twee frames een waar er nog niks gebeurt en een waar het is gebeurt
 hiertussen heb ik een animatie gezet. ik heb alleen het principe "pose to pose" gebruikt omdat ik vond dat dit de enige passende optie was in mijn visie.
 
+https://github.com/user-attachments/assets/338fe561-2322-4014-a791-161c4054a30f
 
-
-inter
+ook heb ik met js een hamburgermenu met een accordionmenu gemaakt.
+hierin heb ik de marker een animatie gegeven waarin het 180deg draait op de click.
 
 https://github.com/user-attachments/assets/8e9276b0-a65f-4d42-a311-312f37993735
 
 
+responsiveness
+
+
+
 https://github.com/user-attachments/assets/be0b1e50-9ced-4bf0-bfc2-42120c98db7f
+
+
+
+
+
+
+
 
 
 
