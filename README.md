@@ -22,6 +22,7 @@ eerste breakpoint is op 770px, dit is de tablet-view. de mobile-nav is nog zicht
 tweede breakpoint is op 985px, dit is de pc-view. de mobile-nav verdwijnt en de nav in de header word zichtbaar.
 
 hier een video die de breakpoints laat zien doormiddel van de viewport.
+
 https://github.com/user-attachments/assets/47291606-4b3e-49ce-bd0c-9b19009d4476
 
 
