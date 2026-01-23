@@ -485,7 +485,7 @@ a.paginaNrKnop {
     margin: 0.5em;
     justify-items: center;
     background-color: var(--knop-nr-basis);
-    color: var(--text-basis-licht);
+    color: var(--text-basis-donker);
 }
 
 .knopActive {
